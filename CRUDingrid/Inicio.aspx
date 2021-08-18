@@ -10,13 +10,14 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <Table>
+            <asp:HiddenField ID="HFiddisco" runat="server" />
+            <table>
                 <tr>
                     <td>
                         <asp:Label ID="lbNombre" runat="server" Text="Nombre"></asp:Label>
                     </td>
                     <td colspan="2">
-                        <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtNombre" runat="server" ></asp:TextBox>
                     </td>
                 </tr>
 
@@ -50,9 +51,9 @@
                 <tr>
                     <td></td>
                     <td colspan="3">
-                        <asp:Button ID="btnGuardar" runat="server" Text="Guardar" />
-                        <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" />
-                        <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" />
+                        <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" />
+                        <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" />
+                        <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" OnClick="btnLimpiar_Click" />
                     </td>
                 </tr>
 
@@ -69,7 +70,7 @@
                     </td>
                 </tr>
 
-            </Table>
+            </table>
 
             <br/. />
             <asp:GridView ID="gvDiscos" runat="server" AutoGenerateColumns="false" Width="428px">
@@ -80,7 +81,7 @@
                     <asp:BoundField DataField="Descripcion" HeaderText="Descripción" />
                     <asp:TemplateField>
                         <ItemTemplate>
-                            <asp:LinkButton Text="Seleccionar" ID="lnkSeleccionar" CommandArgument='<% Eval("iddisco") %>' runat="server" />
+                            <asp:LinkButton Text="Seleccionar" ID="lnkSeleccionar" CommandArgument='<%# Eval("iddisco") %>' runat="server" OnClick="lnkSeleccionar_OnClick" />
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>
