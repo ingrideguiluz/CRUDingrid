@@ -17,7 +17,7 @@ CRUD DISCOS es una aplicación web sencilla que nos permite cumplir con las opre
 y Borrar", ha sido desarrollada con ASP.NET y con C# como lenguaje de programación, es un CRUD muy sencillo con el cual se puede interactuar con la base de datos sin problema, por
 parte de la base de datos se han implementado procedimientos almacenados para un mejor control.
 
-Explicación de carperta de código
+Explicación de carpetas de código
 =====================
 Carpeta "stored procedure" 
 En esta se encuentran almacenados los scripts para crear los procedimientos almacenados, que se utilizan en el CRUD.
