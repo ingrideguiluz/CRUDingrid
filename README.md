@@ -16,7 +16,7 @@ conforman las diferentes funcionalidades del CRUD.
 
 Descripción
 =====================
-CRUD DISCOS es una aplicación web sencilla que nos permite cumplir con las opreciones de un CRUD en ingles "Create, Read, Update and Delete" o en español "Crear, Leer, Actualizar 
+CRUD DISCOS es una aplicación web sencilla que nos permite cumplir con las operaciones de un CRUD en ingles "Create, Read, Update and Delete" o en español "Crear, Leer, Actualizar 
 y Borrar", ha sido desarrollada con ASP.NET y con C# como lenguaje de programación, es un CRUD muy sencillo con el cual se puede interactuar con la base de datos sin problema, por
 parte de la base de datos se han implementado procedimientos almacenados para un mejor control.
 
