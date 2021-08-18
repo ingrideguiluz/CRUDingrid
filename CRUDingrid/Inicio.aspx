@@ -8,6 +8,8 @@
     <title></title>
 </head>
 <body>
+    <asp:Label ID="lbInicio" runat="server" Text="CRUD Discos Musicales" BackColor="#9999ff" Font-Size="XX-Large" Font-Bold="true"></asp:Label>
+     <br/. />
     <form id="form1" runat="server">
         <div>
             <asp:HiddenField ID="HFiddisco" runat="server" />
@@ -73,7 +75,7 @@
             </table>
 
             <br/. />
-            <asp:GridView ID="gvDiscos" runat="server" AutoGenerateColumns="false" Width="428px">
+            <asp:GridView ID="gvDiscos" runat="server" AutoGenerateColumns="false" Width="689px" HorizontalAlign="Justify">
                 <Columns>
                     <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
                     <asp:BoundField DataField="Precio" HeaderText="Precio" />
@@ -85,6 +87,10 @@
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>
+                <RowStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                <SortedAscendingHeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                <SortedDescendingCellStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                <SortedDescendingHeaderStyle HorizontalAlign="Center" VerticalAlign="Top" />
             </asp:GridView>
         </div>
     </form>
