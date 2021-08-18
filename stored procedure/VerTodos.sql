@@ -1,0 +1,4 @@
+CREATE PROCEDURE `VerTodos` ()
+BEGIN
+SELECT * FROM discos;
+END
